@@ -14,9 +14,9 @@ public class Library {
 
         for (Book book : books) {
             System.out.println(
-                    number + ". Title: \"" + book.getTitle()
-                            + "\", Author: \"" + book.getAuthor()
-                            + "\", Year: " + book.getPublicationYear()
+                number + ". Title: \"" + book.getTitle()
+                        + "\", Author: \"" + book.getAuthor()
+                        + "\", Year: " + book.getPublicationYear()
             );
 
             number++;
@@ -24,15 +24,15 @@ public class Library {
     }
 
     public void findBooksByAuthor(String author) {
-        System.out.println();
+
         System.out.println("Books by Author \"" + author + "\":");
 
         for (Book book : books) {
+
             if (book.getAuthor().equals(author)) {
-                System.out.println(
-                        "Title: \"" + book.getTitle()
-                                + "\", Year: " + book.getPublicationYear()
+                System.out.println("Title: \"" + book.getTitle() + "\", Year: " + book.getPublicationYear()
                 );
+
             }
         }
     }
